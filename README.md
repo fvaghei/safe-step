@@ -54,14 +54,26 @@ alerting the user through vibration or sound.
 
 ---
 
+## 🖥️ **Use of Renode for Hardware Simulation**  
+Since we are focusing on using simulators to develop and test the system, **Renode** will be used to simulate the hardware, including sensors and microcontrollers, instead of using physical hardware for testing. This will allow us to develop and debug the system more efficiently in a virtual environment.
+
+### Steps for Renode Integration:
+1. **Simulate microcontroller (e.g., ESP32 or Arduino)** using Renode.
+2. **Simulate sensors** (ultrasonic and IR sensors) and connect them to the simulated microcontroller.
+3. **Test communication** between the sensors and alert system using Renode.
+4. **Verify the system's response** to obstacle detection and alerts in a controlled, virtual environment before hardware deployment.
+
+By utilizing **Renode**, we aim to ensure that the software and system logic are functioning correctly before the physical prototype is tested.
+
+---
+
 ## 📌 How to Run  
-1. Upload the project code to **Arduino / ESP32**.  
-2. Properly connect the sensors and alert system.  
-3. Install SafeStep on the shoe and conduct field tests.  
+1. Set up the Renode environment on your local machine.  
+2. Clone the project repository and configure the virtual environment.  
+3. Run the simulation using Renode to emulate the system's behavior and debug the logic.  
+4. Once the simulation is successful, deploy the code to physical hardware (Arduino / ESP32).  
 
 ---
 
 ## 📢 Contributing and Development  
-If you are interested in improving this project, feel free to submit a Pull Request or reach out to us! 😊  
-
----
+If you are interested in improving this project, feel free to submit a Pull Request or reach out to us! 😊

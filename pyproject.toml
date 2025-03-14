@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "safe-step"
+version = "0.1.0"
+description = "A warning system fot visually impaired individuals using advanced sensors integrated into shoes."
+authors = ["fvaghei <fatemehvaghei39@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
