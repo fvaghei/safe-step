@@ -1,0 +1,15 @@
+# Ignore JetBrains IDEs (e.g., PyCharm, IntelliJ)
+.idea/
+
+# Ignore Python virtual environments
+.venv/
+
+# Ignore Poetry virtual environment
+.tox/
+.coverage
+dist/
+build/
+*.egg-info/
+
+# Ignore the .env file
+.env
